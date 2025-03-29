@@ -1,6 +1,16 @@
 package com.yupi.springbootinit.utils;
 
+import cn.hutool.core.bean.BeanUtil;
+import cn.hutool.http.HttpRequest;
+import cn.hutool.json.JSONUtil;
+import cn.hutool.json.JSONArray;
+import cn.hutool.json.JSONObject;
+import com.yupi.springbootinit.model.entity.Post;
+
 import java.net.InetAddress;
+import java.util.ArrayList;
+import java.util.Map;
+
 import javax.servlet.http.HttpServletRequest;
 
 /**
@@ -51,5 +61,4 @@ public class NetUtils {
         }
         return ip;
     }
-
 }
